@@ -1,0 +1,445 @@
+
+/* =============== Type =============== */
+*{ 
+    color: #301d00;
+    font-family: "Caveat", serif;
+    
+}
+
+.text_center{ 
+    text-align: center;
+}
+
+a { 
+    font-family: "Modern Antiqua", serif;
+}
+
+h1 { 
+    font-family: "Trade Winds", system-ui, serif;
+}
+
+h2 { 
+    font-family: "Trade Winds", system-ui, serif;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p{ 
+    font-size: 25px;
+}
+
+.indent { 
+    text-indent: 20px; 
+}
+
+/* =============== Layouts =============== */
+#container { 
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    width: 62.5rem;
+    padding-top: 80px;
+}
+
+/* =============== Scroll Bar =============== */
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #3f2601; 
+    background-color:#af9267d8;
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(99, 70, 27); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #aa4728;}
+
+/* =============== Backgrounds =============== */
+
+body{
+    background-image: url(Images/Back.jpg);
+    background-color: rgb(36, 25, 82);
+    background-size: 20%;
+}
+
+#container {
+    background-color: #dad1b8;
+}
+
+.WoodGrain{
+    background-image: url(Images/Dark_Wood.jpg);
+    background-color:  gray;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+
+/* =============== Header/Footer =============== */
+
+header { 
+    position: fixed;
+    top: 0;
+    left: auto;
+    width: 62.5rem;
+    z-index: 1;
+    margin: 0;
+} 
+
+header h1 {
+    font-size: 40px;
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    color: #e9b46fc4;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+.nav_logo{
+    width: 60px;
+    float: left;
+    padding: 14px 20px;
+}
+
+.head_nav a{
+    float: right;
+    padding: 15px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent;
+
+    font-size: 25px;
+    text-align: center;
+    color: #e9bc81e5;
+}
+
+.head_nav a:hover {
+    background-color: #b8967694;
+    color: #ffffff;
+
+    transition-duration: .5s;
+}
+
+footer { 
+    text-align: center;
+    
+}
+
+#legal { 
+    font-size: 15px;
+    padding: 10px;
+    color: #ecd1ade5;
+}
+.fa-brands { 
+    font-size: 20pt;
+    color: #e9bc81e5;
+    padding-top: 10pt;
+}
+
+.fa-brands:hover{
+    color: #ffdcae;
+}
+  
+
+
+
+/* =============== Home =============== */
+
+#home_img { 
+    position: relative;
+    height: 685px;
+}
+
+#home_img img { 
+    margin: auto;
+    width: 100%;
+}
+
+#home_text { 
+    position: absolute;
+    top: 50%;
+
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    text-align: center;
+
+    background-color: #cec3a09d;
+}
+ 
+
+
+
+/* =============== Intro Story  =============== */
+#story { 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 25pt;
+    background-color:#d3b486d8;
+    
+}
+
+#story_img{ 
+    width: 100%;
+}
+
+#story_text{ 
+    padding: 10%;
+    overflow: auto;
+    height: 567px;
+
+}
+
+#story_text p{ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* =============== Armory =============== */
+
+#armory { 
+    padding-left: 25pt;
+    padding-right: 25pt;
+}
+
+#armory_text { 
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#d3b486d8;
+}
+
+#crates{ 
+    margin: auto;
+
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    align-items: center;
+}
+
+#crates .armory_img{
+    width: 100%;
+    height: 100%;
+}
+
+.img_container{
+    position: relative;
+    overflow: hidden;
+}
+
+.img_txt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: #c9572275;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.img_txt:hover {
+    opacity: 1;
+}
+
+.img_txt a {
+    color: white;
+    font-family: "Big Shoulders Text", sans-serif;
+    font-size: 40pt;
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ 
+
+
+/* =============== 3d =============== */
+
+.model_back { 
+    background-color: #9b8263;
+    border-style: solid;
+    border-width: 20px;
+    border-color: #412716;
+}
+
+.model{ 
+    width: 90%;
+    height: 580px;
+
+    margin: auto;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+
+/* =============== Chose End =============== */
+
+#c_end {
+    padding: 10%;
+    padding-top: 25pt;
+    padding-bottom: 40pt;
+    text-align: center;
+}
+
+#c_end img { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+
+    border: solid 15px #5a3600;
+}
+
+#c_end div { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+}
+
+#c_end p { 
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+#c_end h1 { 
+    margin-bottom: 0;
+}
+
+/* =============== Credits =============== */
+
+#credit { 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 25pt;
+    background-color:#d3b486d8;
+}
+
+
+#media_source { 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 25pt;
+
+}
+
+#credit_img { 
+ width: 100%;
+}
+
+#credit_text{ 
+    padding: 10%;
+    overflow: auto;
+    height: 370px;
+}
+
+#credit_text p{ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.title_spacer{ 
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    padding-left: 25pt;
+    padding-right: 25pt;
+
+    margin: 0;
+
+    background-color: #836231;
+    color: #d3b486;
+
+}
+.ms_text { 
+    background-color:#d3b486d8;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+li {
+    font-size:25px;
+}
+
+ul li a{
+    font-family: "Caveat", serif;
+    text-decoration: none;
+}
+
+
+ul li a:hover {
+    color: #9e2702;
+    text-decoration: underline;
+}
+
+
+/* =============== Button =============== */
+
+.space { 
+    margin-right: 20px;
+
+}
+
+.button{ 
+    font-family: "Cherry Swash", serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #f3e4ce;
+    text-align: center;
+
+    background-color: #ad7c3c;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: #854a08;
+
+    padding: 10px 20px;
+
+    transition: .5s;
+}
+
+.button:hover {
+    background-color: #c07e5f;
+    border-color: #8b4432;
+    color: #531e1a;
+}
+
