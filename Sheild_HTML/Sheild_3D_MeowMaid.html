@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../Style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Modern+Antiqua&family=Trade+Winds&display=swap" rel="stylesheet">
+
+    <title>Meowmaid's Shell</title>
+</head> 
+
+<body>
+  <div id="container">
+    <header class="WoodGrain">
+
+      <section>
+        <img src="../Images/Logo_Cat.svg" class="nav_logo">
+        <h1>Meowtopia</h1>
+      </section>
+
+      <nav class="head_nav"> 
+        <a href="../credits.html">Credits</a>
+        <a href="../armory.html">Armory</a>
+        <a href="../intro_story.html">Story</a>
+        <a href="../index.html">Home</a>
+      </nav>
+
+    </header>
+
+    <main> 
+      
+      <div id="story"> 
+
+            <div class="model_back">
+              <model-viewer class="model" src="Assets/Sheild 3D/Meowmaid.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="0.62" exposure="1.19" shadow-softness="0.9">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+                <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div>
+            </model-viewer>
+            
+            </div>
+
+            <div id="story_text">
+            <h2>Meowmaid's Shell</h2>
+            <p class="indent">The kingdom has been suffering from an unrelenting rain spell. It has been causing trouble creating flash floods and destroying buildings. Cats have been losing their lives trying to survive the horrible weather. </p>
+            <p class="indent">Our Meowsionay had told us only you can use the Meowmaid’s Shell. Crafted by the Catfish clan, a group of Meowmaids that live in the deep sea, only their descendants can use it, the only problem is they no longer have communication with the Catfish clan, and no one but you have a connection to them</p>
+            <p class="indent">Thankfully there are written instructions on how to use the shield written by the meowmaids given to the kingdom when Meowmaid’s Shell. Was given to the king. </p>
+
+            <p>
+            A: Skip Instructions
+            <br>
+            B: Read The Instructions
+            </p>
+            <br>
+            <a class="button space" href="Sheild_MeowMaid_End_1.html">Skip </a>
+          
+            <a class="button" href="Sheild_MeowMaid_End_2.html">Read</a>
+
+            </div>
+      </div>
+
+    </main>
+
+    <footer class="WoodGrain">
+  
+        <nav>  
+          <a href="https://www.tiktok.com/@ninjadj4j/" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+
+          <a href="https://www.youtube.com/@ninjadj4j907" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+           
+          <a href="https://www.instagram.com/joeyc0414/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </nav>
+
+        <section id="legal">
+          Copyright Joey C.<br>
+          All Rights Reserved
+        </section>
+  </footer>
+
+</div>
+
+</body>
+
+</html>
